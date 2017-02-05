@@ -993,44 +993,21 @@
         function pop_SingPostLocations7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>BRANCH_NAM</strong><br />' + (feature.properties['BRANCH_NAM'] !== null ? Autolinker.link(String(feature.properties['BRANCH_NAM'])) : '') + '</td>\
+                        <td colspan="2"><strong>BRANCH_NAME</strong><br />' + (feature.properties['BRANCH_NAM'] !== null ? Autolinker.link(String(feature.properties['BRANCH_NAM'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['BRANCH_ADD'] !== null ? Autolinker.link(String(feature.properties['BRANCH_ADD'])) : '') + '</td>\
+                        <td colspan="2"><strong>BRANCH_ADDRESS</strong><br />' + (feature.properties['BRANCH_ADD'] !== null ? Autolinker.link(String(feature.properties['BRANCH_ADD'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['X-COORDINA'] !== null ? Autolinker.link(String(feature.properties['X-COORDINA'])) : '') + '</td>\
+                        <td colspan="2"><strong>OPEN_ON_SUNDAYS</strong><br />' + (feature.properties['OPEN_ON_SU'] !== null ? Autolinker.link(String(feature.properties['OPEN_ON_SU'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Y-COORDINA'] !== null ? Autolinker.link(String(feature.properties['Y-COORDINA'])) : '') + '</td>\
+                        <td colspan="2"><strong>OPEN_ON_PUBLIC_HOLIDAYS</strong><br />' + (feature.properties['OPEN_ON_PH'] !== null ? Autolinker.link(String(feature.properties['OPEN_ON_PH'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['OPEN_ON_SU'] !== null ? Autolinker.link(String(feature.properties['OPEN_ON_SU'])) : '') + '</td>\
+                        <td colspan="2"><strong>POSTAL_CODE</strong><br />' + (feature.properties['POSTAL_NEW'] !== null ? Autolinker.link(String(feature.properties['POSTAL_NEW'])) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['OPEN_ON_PH'] !== null ? Autolinker.link(String(feature.properties['OPEN_ON_PH'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['POSTAL_NEW'] !== null ? Autolinker.link(String(feature.properties['POSTAL_NEW'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['%Private'] !== null ? Autolinker.link(String(feature.properties['%Private'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['%Public'] !== null ? Autolinker.link(String(feature.properties['%Public'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['PrivateInBuffer_Count'] !== null ? Autolinker.link(String(feature.properties['PrivateInBuffer_Count'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['PublicInBuffer_Count'] !== null ? Autolinker.link(String(feature.properties['PublicInBuffer_Count'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['PrivateToBranch_Count'] !== null ? Autolinker.link(String(feature.properties['PrivateToBranch_Count'])) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['PublicToBranch_Count'] !== null ? Autolinker.link(String(feature.properties['PublicToBranch_Count'])) : '') + '</td>\
-                    </tr>\
                 </table>';
             layer.bindPopup(popupContent);
         }
